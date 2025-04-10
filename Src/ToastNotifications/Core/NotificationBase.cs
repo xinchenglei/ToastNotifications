@@ -9,7 +9,11 @@ namespace ToastNotifications.Core
             Message = message;
 
             Options = options ?? new MessageOptions();
+
+            Timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
         }
+
+        public string Timestamp { get; set; }
 
         public string Message { get; }
 

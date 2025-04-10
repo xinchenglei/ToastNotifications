@@ -19,9 +19,6 @@
     <AssemblyOriginatorKeyFile>../../Build/DevCrew.ToastNotifications_TemporaryKey.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="DevCrew.ToastNotifications.pfx" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\ToastNotifications\ToastNotifications.csproj" />
   </ItemGroup>
   <ItemGroup>
@@ -29,5 +26,9 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataSuccess\" />
+    <Folder Include="DataFailed\" />
   </ItemGroup>
 </Project>
